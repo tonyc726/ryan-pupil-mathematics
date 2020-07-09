@@ -1,0 +1,167 @@
+.container {
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 0.6rem;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.start-wrapper {
+  margin-top: 25%;
+  text-align: center;
+}
+.start-wrapper .start-button,
+.start-wrapper .start-button-icon {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.playground {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10;
+  font-size: 800%;
+
+  font-family: -apple-system, 'Helvetica Neue', 'Arial';
+}
+
+.playground-x {
+  color: #333;
+}
+.playground-operator {
+  margin-left: 3%;
+  margin-right: 3%;
+  color: #ff5722;
+}
+.playground-y {
+  color: #333;
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  font-family: -apple-system, 'Helvetica Neue', 'Arial';
+}
+.options .options-button {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 300%;
+}
+
+.answer-wrapper {
+  text-align: center;
+}
+.answer-wrapper .answer-correct,
+.answer-wrapper .answer-incorrect {
+  font-size: 800%;
+}
+.answer-wrapper .answer-correct {
+  color: #2e7d32;
+}
+.answer-wrapper .answer-incorrect {
+  color: #d50000;
+}
+
+.timeout {
+  margin-top: 25%;
+  font-size: 120%;
+  text-align: center;
+}
+.timeout .timeout-icon {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.timeout .timeout-title {
+  font-size: 200%;
+}
+.timeout .timeout-p {
+  font-size: 100%;
+}
+/* http://stephen.io/mediaqueries */
+/* iPhone 6, 7, & 8 in portrait & landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .start-wrapper .start-button,
+  .start-wrapper .start-button-icon {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+  .playground {
+    font-size: 800%;
+  }
+  .options {
+  }
+  .options .options-button {
+    font-size: 300%;
+  }
+  .answer-wrapper .answer-correct,
+  .answer-wrapper .answer-incorrect {
+    font-size: 800%;
+  }
+  .timeout {
+    font-size: 120%;
+  }
+  .timeout .timeout-icon {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+
+  .timeout .timeout-title {
+    font-size: 200%;
+  }
+  .timeout .timeout-p {
+    font-size: 100%;
+  }
+}
+/* iPad in portrait & landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .start-wrapper .start-button,
+  .start-wrapper .start-button-icon {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+  .playground {
+    font-size: 1500%;
+  }
+  .options {
+  }
+  .options .options-button {
+    font-size: 600%;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+
+  .answer-wrapper .answer-correct,
+  .answer-wrapper .answer-incorrect {
+    font-size: 1500%;
+  }
+  .timeout {
+  }
+  .timeout .timeout-icon {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+
+  .timeout .timeout-title {
+    font-size: 200%;
+  }
+  .timeout .timeout-p {
+    font-size: 150%;
+  }
+}

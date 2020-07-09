@@ -1,0 +1,22 @@
+.container {
+}
+
+.title {
+  padding-left: 25%;
+}
+
+.body {
+  margin: 1.2rem 1.2rem;
+}
+
+.body .form-control {
+  padding: 0 0.4rem 1.2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.body .form-legend {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 0 -0.4rem 0.6rem;
+}

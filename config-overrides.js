@@ -1,0 +1,28 @@
+const {
+  override,
+  fixBabelImports,
+  // setWebpackTarget,
+  // setWebpackPublicPath,
+} = require('customize-cra');
+
+module.exports = override(
+  fixBabelImports('@material-ui/core', {
+    libraryDirectory: 'esm', // or '' if your bundler does not support ES modules
+    camel2DashComponentName: false,
+  }),
+  fixBabelImports('@material-ui/lib', {
+    libraryDirectory: 'esm', // or '' if your bundler does not support ES modules
+    camel2DashComponentName: false,
+  }),
+  fixBabelImports('@material-ui/icons', {
+    libraryDirectory: 'esm', // or '' if your bundler does not support ES modules
+    camel2DashComponentName: false,
+  }),
+  // setWebpackPublicPath(process.env.NODE_ENV === 'production' ? './' : null)
+  (() => (config) => {
+    if (process.env.NODE_ENV === 'production') {
+      config.output.publicPath = './';
+    }
+    return config;
+  })()
+);

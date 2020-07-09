@@ -1,0 +1,17 @@
+.container {
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.body {
+  margin: 1.2rem 1.2rem;
+}
+
+.footer {
+}
