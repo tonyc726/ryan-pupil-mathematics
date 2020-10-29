@@ -1,9 +1,9 @@
 {
   "name": "ryan-pupil-mathematics",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "description": "泺少的小学数学游戏",
-  "homepage": "https://tonyc726.github.io/ryan-pupil-mathematics/",
+  "homepage": "https://tonyc726.github.io/ryan-pupil-mathematics",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -3,7 +3,9 @@ import { applyMiddleware, compose, createStore } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 import createRootReducer from './reducers';
 
-export const history = createBrowserHistory();
+export const history = createBrowserHistory(process.env.NODE_ENV === 'production' ? {
+  basename: process.env.REACT_APP_BASE_NAME
+} : {});
 
 const composeEnhancers =
   process.env.NODE_ENV === 'development' && window.__REDUX_DEVTOOLS_EXTENSION__

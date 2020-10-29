@@ -31,6 +31,7 @@ jobs:
       - name: Build page
         env:
           NODE_ENV: production
+          REACT_APP_BASE_NAME: "/ryan-pupil-mathematics"
           PUBLIC_URL: "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/"
         run: npm run build
       - name: Deploy to gh-pages
