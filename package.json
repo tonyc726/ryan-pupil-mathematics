@@ -3,10 +3,10 @@
   "version": "0.8.0",
   "private": true,
   "description": "泺少的小学数学游戏",
-  "homepage": "https://tonyc726.github.io/ryan-pupil-mathematics",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env NODE_ENV=production PUBLIC_URL=https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/ react-scripts build",
+    "build": "cross-env PUBLIC_URL=https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/ NODE_ENV=production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
