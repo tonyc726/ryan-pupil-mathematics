@@ -116,6 +116,7 @@ class Game extends React.Component {
         y = randomInt(0, range);
       }
     }
+    // eslint-disable-next-line
     const z = eval(`${x}${operator}${y}`);
     const zAtOptionIndex = randomInt(0, optionLength - 1);
     const options = [];

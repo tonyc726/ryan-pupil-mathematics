@@ -2,9 +2,9 @@ import React from 'react';
 import {
   AppBar,
   Toolbar,
-  List,
-  ListItem,
-  ListItemText,
+  // List,
+  // ListItem,
+  // ListItemText,
   Button,
   Typography,
 } from '@material-ui/core';
@@ -13,7 +13,7 @@ import FunctionsIcon from '@material-ui/icons/Functions';
 
 import styles from './styles.module.css';
 
-import { isFunction } from 'lodash';
+// import { isFunction } from 'lodash';
 
 class Home extends React.Component {
   constructor(props) {
