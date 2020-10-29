@@ -26,7 +26,7 @@ module.exports = override(
   (() => (config) => {
     if (process.env.NODE_ENV === 'production') {
       config.output.publicPath =
-        'https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/';
+        './';
     }
     return config;
   })()
