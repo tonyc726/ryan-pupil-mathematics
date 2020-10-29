@@ -18,10 +18,15 @@ module.exports = override(
     libraryDirectory: 'esm', // or '' if your bundler does not support ES modules
     camel2DashComponentName: false,
   }),
-  // setWebpackPublicPath(process.env.NODE_ENV === 'production' ? './' : null)
+  // setWebpackPublicPath(
+  //   process.env.NODE_ENV === 'production'
+  //     ? 'https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/'
+  //     : null
+  // )
   (() => (config) => {
     if (process.env.NODE_ENV === 'production') {
-      config.output.publicPath = './';
+      config.output.publicPath =
+        'https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/';
     }
     return config;
   })()
