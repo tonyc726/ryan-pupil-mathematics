@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/precache-manifest.a656972aadd6acb3c5cf74d0cacad911.js"
+  "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/precache-manifest.51e7511e50b4c27e47df0e030229744d.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a4af9b0a68c14c945223a96245e6517",
+    "revision": "7ad2b1635b496d34dc10aaa662624039",
     "url": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/index.html"
   },
   {
-    "revision": "d96029c49c32a59d3387",
+    "revision": "ec3918f68acc1267b60e",
     "url": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.6b4474f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d96029c49c32a59d3387",
-    "url": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.af3766ad.chunk.js"
+    "revision": "ec3918f68acc1267b60e",
+    "url": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.9ea4d184.chunk.js"
   },
   {
     "revision": "32e3db507b643f2892d0",

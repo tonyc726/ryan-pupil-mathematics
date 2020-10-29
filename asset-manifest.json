@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.6b4474f6.chunk.css",
-    "main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.af3766ad.chunk.js",
-    "main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.af3766ad.chunk.js.map",
+    "main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.9ea4d184.chunk.js",
+    "main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.9ea4d184.chunk.js.map",
     "runtime-main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/runtime-main.854feeb0.js",
     "runtime-main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/runtime-main.854feeb0.js.map",
     "static/js/2.82143aa6.chunk.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js",
     "static/js/2.82143aa6.chunk.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js.map",
     "index.html": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/index.html",
-    "precache-manifest.a656972aadd6acb3c5cf74d0cacad911.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/precache-manifest.a656972aadd6acb3c5cf74d0cacad911.js",
+    "precache-manifest.51e7511e50b4c27e47df0e030229744d.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/precache-manifest.51e7511e50b4c27e47df0e030229744d.js",
     "service-worker.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/service-worker.js",
     "static/css/main.6b4474f6.chunk.css.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.6b4474f6.chunk.css.map",
     "static/js/2.82143aa6.chunk.js.LICENSE.txt": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.854feeb0.js",
     "static/js/2.82143aa6.chunk.js",
     "static/css/main.6b4474f6.chunk.css",
-    "static/js/main.af3766ad.chunk.js"
+    "static/js/main.9ea4d184.chunk.js"
   ]
 }
