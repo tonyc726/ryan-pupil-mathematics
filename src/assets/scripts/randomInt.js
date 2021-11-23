@@ -6,4 +6,5 @@
  *
  * @returns {number}
  */
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (min, max) => Math.round(Math.random() * (max - min)) + min;
