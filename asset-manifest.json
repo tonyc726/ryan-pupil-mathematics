@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.6b4474f6.chunk.css",
-    "main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.9ea4d184.chunk.js",
-    "main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.9ea4d184.chunk.js.map",
-    "runtime-main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/runtime-main.854feeb0.js",
-    "runtime-main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/runtime-main.854feeb0.js.map",
-    "static/js/2.82143aa6.chunk.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js",
-    "static/js/2.82143aa6.chunk.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js.map",
+    "main.css": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.63cc282c.chunk.css",
+    "main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.56b1fd80.chunk.js",
+    "main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/main.56b1fd80.chunk.js.map",
+    "runtime-main.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/runtime-main.dbbf1b54.js",
+    "runtime-main.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/runtime-main.dbbf1b54.js.map",
+    "static/js/2.835bf943.chunk.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.835bf943.chunk.js",
+    "static/js/2.835bf943.chunk.js.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.835bf943.chunk.js.map",
     "index.html": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/index.html",
-    "precache-manifest.51e7511e50b4c27e47df0e030229744d.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/precache-manifest.51e7511e50b4c27e47df0e030229744d.js",
-    "service-worker.js": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/service-worker.js",
-    "static/css/main.6b4474f6.chunk.css.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.6b4474f6.chunk.css.map",
-    "static/js/2.82143aa6.chunk.js.LICENSE.txt": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.82143aa6.chunk.js.LICENSE.txt"
+    "static/css/main.63cc282c.chunk.css.map": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/css/main.63cc282c.chunk.css.map",
+    "static/js/2.835bf943.chunk.js.LICENSE.txt": "https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@gh-pages/static/js/2.835bf943.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.854feeb0.js",
-    "static/js/2.82143aa6.chunk.js",
-    "static/css/main.6b4474f6.chunk.css",
-    "static/js/main.9ea4d184.chunk.js"
+    "static/js/runtime-main.dbbf1b54.js",
+    "static/js/2.835bf943.chunk.js",
+    "static/css/main.63cc282c.chunk.css",
+    "static/js/main.56b1fd80.chunk.js"
   ]
 }
