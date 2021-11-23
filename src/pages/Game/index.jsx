@@ -1,11 +1,11 @@
 import React from 'react';
-import { isNil, padStart, get, includes, delay } from 'lodash';
+import { delay, get, includes, isNil, padStart } from 'lodash';
 import {
   AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
   Fab,
+  IconButton,
+  Toolbar,
+  Typography,
 } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import TimerIcon from '@material-ui/icons/Timer';
@@ -32,6 +32,9 @@ class Game extends React.Component {
     }
     if (`${params.subtraction}` === '1') {
       operators.push('-');
+    }
+    if (`${params.multiplication}` === '1') {
+      operators.push('*');
     }
     const optionLength =
       2 + (isNil(params.level) ? 0 : parseInt(params.level, 10));
@@ -124,9 +127,9 @@ class Game extends React.Component {
       if (i === zAtOptionIndex) {
         options[i] = z;
       } else {
-        let r = randomInt(0, 2 * range);
+        let r = randomInt(0, operators === '*' ? range * range : 2 * range);
         while (includes(options, r) || r === z) {
-          r = randomInt(0, 2 * range);
+          r = randomInt(0, operators === '*' ? range * range : 2 * range);
         }
         options[i] = r;
       }
@@ -224,7 +227,9 @@ class Game extends React.Component {
           <>
             <div className={styles.playground}>
               <span className={styles['playground-x']}>{x}</span>
-              <span className={styles['playground-operator']}>{operator}</span>
+              <span className={styles['playground-operator']}>
+                {operator === '*' ? 'x' : operator}
+              </span>
               <span className={styles['playground-y']}>{y}</span>
             </div>
             {answer === null ? (

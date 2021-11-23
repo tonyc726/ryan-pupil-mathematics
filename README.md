@@ -22,11 +22,11 @@
 
 ### 2、选择游戏规则
 
-<img width="360" alt="新建游戏截图" src="https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@master/docs/screen-1.png" />
+<img width="360" alt="选择游戏规则" src="https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@master/docs/screen-1.png" />
 
 ### 3、开始游戏
 
-<img width="360" alt="新建游戏截图" src="https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@master/docs/screen-2.png" />
+<img width="360" alt="开始游戏" src="https://cdn.jsdelivr.net/gh/tonyc726/ryan-pupil-mathematics@master/docs/screen-2.png" />
 
 ---
 

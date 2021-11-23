@@ -30,7 +30,7 @@ function App() {
             <Route exact path="/create-game" component={CreateGame} />
             <Route
               exact
-              path="/game/:range/:addition/:subtraction/:level/:minutes"
+              path="/game/:range/:addition/:subtraction/:multiplication/:level/:minutes"
               component={Game}
             />
             <Route

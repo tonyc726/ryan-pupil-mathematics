@@ -2,19 +2,19 @@ import React from 'react';
 import { get } from 'lodash';
 import {
   AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Slider,
   Button,
   Checkbox,
-  Radio,
   FormControl,
-  FormLabel,
-  FormGroup,
-  RadioGroup,
   FormControlLabel,
+  FormGroup,
   FormHelperText,
+  FormLabel,
+  IconButton,
+  Radio,
+  RadioGroup,
+  Slider,
+  Toolbar,
+  Typography,
 } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import SendIcon from '@material-ui/icons/Send';
@@ -29,17 +29,18 @@ class CreateGame extends React.Component {
       range: 5, // 运算的数字范围
       addition: true, // 是否启用加法
       subtraction: false, // 是否启用减法
+      multiplication: false, // 是否启用乘法，TODO：特殊处理，启用乘法时，禁用加减法，后期恢复混合运算
       level: 0, // 0(2个选项),1(3个选项),2(4个选项)
       minutes: 1, // 游戏时长(分钟)
     };
 
     this.handleRangeChange = this.handleRangeChange.bind(this);
-    this.handleAdditionStatusChange = this.handleAdditionStatusChange.bind(
-      this
-    );
-    this.handleSubtractionStatusChange = this.handleSubtractionStatusChange.bind(
-      this
-    );
+    this.handleAdditionStatusChange =
+      this.handleAdditionStatusChange.bind(this);
+    this.handleSubtractionStatusChange =
+      this.handleSubtractionStatusChange.bind(this);
+    this.handleMultiplicationChange =
+      this.handleMultiplicationChange.bind(this);
     this.handleLevelChange = this.handleLevelChange.bind(this);
     this.handleMinutesChange = this.handleMinutesChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -52,15 +53,19 @@ class CreateGame extends React.Component {
   }
 
   handleAdditionStatusChange(e) {
-    this.setState({
-      addition: get(e, ['target', 'checked'], false),
-    });
+    const nextAddition = get(e, ['target', 'checked'], false);
+    this.setState(({ multiplication }) => ({
+      addition: nextAddition,
+      multiplication: nextAddition === true ? false : multiplication,
+    }));
   }
 
   handleSubtractionStatusChange(e) {
-    this.setState({
-      subtraction: get(e, ['target', 'checked'], false),
-    });
+    const nextSubtraction = get(e, ['target', 'checked'], false);
+    this.setState(({ multiplication }) => ({
+      subtraction: nextSubtraction,
+      multiplication: nextSubtraction === true ? false : multiplication,
+    }));
   }
 
   handleLevelChange(e) {
@@ -75,6 +80,15 @@ class CreateGame extends React.Component {
     });
   }
 
+  handleMultiplicationChange(e, newValue) {
+    const nextMultiplication = get(e, ['target', 'checked'], false);
+    this.setState(({ addition, subtraction }) => ({
+      addition: nextMultiplication === true ? false : addition,
+      subtraction: nextMultiplication === true ? false : subtraction,
+      multiplication: nextMultiplication,
+    }));
+  }
+
   handleSubmit(e) {
     e.preventDefault();
 
@@ -82,11 +96,12 @@ class CreateGame extends React.Component {
       range, // 运算的数字范围
       addition, // 是否启用加法
       subtraction, // 是否启用减法
+      multiplication, // 是否启用乘法
       level, // 0(2个选项),1(3个选项),2(4个选项)
       minutes, // 游戏时长(分钟)
     } = this.state;
 
-    if (addition === false && subtraction === false) {
+    if (addition === false && subtraction === false && multiplication === false) {
       console.warn('');
       return;
     }
@@ -94,12 +109,14 @@ class CreateGame extends React.Component {
     this.props.history.push(
       `/game/${range}/${addition === true ? 1 : 0}/${
         subtraction === true ? 1 : 0
+      }/${
+        multiplication === true ? 1 : 0
       }/${level}/${minutes}/`
     );
   }
 
   render() {
-    const { range, addition, subtraction, level, minutes } = this.state;
+    const { range, addition, subtraction, multiplication, level, minutes } = this.state;
     return (
       <div className={styles.container}>
         <AppBar position="static">
@@ -165,7 +182,7 @@ class CreateGame extends React.Component {
           </FormControl>
           <FormControl
             component="fieldset"
-            error={addition === false && subtraction === false}
+            error={addition === false && subtraction === false && multiplication === false}
             className={styles['form-control']}
             fullWidth
           >
@@ -193,10 +210,20 @@ class CreateGame extends React.Component {
                 }
                 label="减法"
               />
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    checked={multiplication}
+                    onChange={this.handleMultiplicationChange}
+                    name="multiplication"
+                  />
+                }
+                label="乘法"
+              />
             </FormGroup>
-            {addition === false && subtraction === false && (
+            {addition === false && subtraction === false && multiplication === false && (
               <FormHelperText>
-                点击“加法”或者“减法”开启对应的算术运算规则
+                点击“加法”、“减法”或者“乘法”开启对应的算术运算规则
               </FormHelperText>
             )}
           </FormControl>
