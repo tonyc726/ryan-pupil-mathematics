@@ -4,45 +4,35 @@
   "private": true,
   "description": "泺少的小学数学游戏",
   "homepage": "https://tonyc726.github.io/ryan-pupil-mathematics",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
-    "@material-ui/pickers": "^3.2.10",
-    "@material-ui/styles": "^4.10.0",
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "clsx": "^1.1.1",
-    "connected-react-router": "^6.8.0",
-    "date-fns": "^2.16.1",
-    "history": "^4.10.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^5.18.0",
+    "@mui/material": "^5.18.0",
     "lodash": "^4.17.23",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-redux": "^7.2.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^0.0.0",
-    "redux": "^4.0.5"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.13.3",
-    "cross-env": "^7.0.3",
-    "customize-cra": "^1.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.2",
-    "prettier": "^2.4.1",
-    "react-app-rewired": "^2.1.11"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
   },
   "browserslist": {
     "production": [

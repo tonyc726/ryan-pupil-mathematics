@@ -7,10 +7,11 @@ import {
   // ListItemText,
   Button,
   Typography,
-} from '@material-ui/core';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import FunctionsIcon from '@material-ui/icons/Functions';
+} from '@mui/material';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import FunctionsIcon from '@mui/icons-material/Functions';
 
+import withRouter from '../../withRouter';
 import styles from './styles.module.css';
 
 // import { isFunction } from 'lodash';
@@ -59,4 +60,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);

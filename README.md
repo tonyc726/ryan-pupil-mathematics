@@ -14,6 +14,17 @@
 
 - Github Page: https://tonyc726.github.io/ryan-pupil-mathematics/
 
+## 本地开发
+
+需要 Node.js 18+。
+
+```bash
+npm install
+npm start          # 或 npm run dev，默认 http://localhost:3000
+npm test
+npm run build      # 产出到 build/
+```
+
 ## 如何使用
 
 ### 1、新建游戏
