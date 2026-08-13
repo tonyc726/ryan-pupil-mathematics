@@ -6,15 +6,16 @@ import {
   IconButton,
   Toolbar,
   Typography,
-} from '@material-ui/core';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import TimerIcon from '@material-ui/icons/Timer';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
-import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
+} from '@mui/material';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import TimerIcon from '@mui/icons-material/Timer';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
+import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
 
 import randomInt from '../../assets/scripts/randomInt';
+import withRouter from '../../withRouter';
 import styles from './styles.module.css';
 
 class Game extends React.Component {
@@ -302,4 +303,4 @@ class Game extends React.Component {
   }
 }
 
-export default Game;
+export default withRouter(Game);

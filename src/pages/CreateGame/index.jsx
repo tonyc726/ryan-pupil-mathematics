@@ -15,10 +15,11 @@ import {
   Slider,
   Toolbar,
   Typography,
-} from '@material-ui/core';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import SendIcon from '@material-ui/icons/Send';
+} from '@mui/material';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import SendIcon from '@mui/icons-material/Send';
 
+import withRouter from '../../withRouter';
 import styles from './styles.module.css';
 
 class CreateGame extends React.Component {
@@ -235,19 +236,22 @@ class CreateGame extends React.Component {
             <FormLabel component="legend" className={styles['form-legend']}>
               游戏难度
             </FormLabel>
-            <RadioGroup value={level} onChange={this.handleLevelChange}>
+            <RadioGroup
+              value={String(level)}
+              onChange={this.handleLevelChange}
+            >
               <FormControlLabel
-                value={0}
+                value="0"
                 control={<Radio />}
                 label="低 - 2个选项"
               />
               <FormControlLabel
-                value={1}
+                value="1"
                 control={<Radio />}
                 label="中 - 3个选项"
               />
               <FormControlLabel
-                value={2}
+                value="2"
                 control={<Radio />}
                 label="高 - 4个选项"
               />
@@ -306,4 +310,4 @@ class CreateGame extends React.Component {
   }
 }
 
-export default CreateGame;
+export default withRouter(CreateGame);

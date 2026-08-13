@@ -339,3 +339,4 @@ $RECYCLE.BIN/
 .vercel
 
 build/
+.vite/
